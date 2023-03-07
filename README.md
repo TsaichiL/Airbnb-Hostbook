@@ -24,8 +24,16 @@ To improve the performance of the random forest model, GridSearchCV was used to 
 ![image](https://user-images.githubusercontent.com/123428884/223526021-70649faa-c742-41df-b7b1-6020159cffdd.png)</br>
 
 ## Model Interpretation
-Implications of top 10 features
+#### Implications of top 10 features
 Feature | Weight | Implication
-instant_bookable_TRUE | 0.27 | Instant bookable feature provides more convenience and ease to customers and thus lead to higher 
-satisfaction rate and higher overall ratings
-
+--- | --- | --- 
+instant_bookable_TRUE | 0.27 | Instant bookable feature provides more convenience and ease to customers and thus lead to higher satisfaction rate and higher overall ratings
+price | 0.10 | Customers are extremely sensitive to prices, in which their overall score ratings hinges on whether they perceive a listing to be a good value for money or not
+amenities | 0.09 | The number of amenities has a positive correlation with the overall score rating of a listing, the more amenities the listing has the better the overall rating gets
+host_acceptance_rate | 0.07 | Guests tend to like properties which’s hosts have a high acceptance rate. Most likely this is a corelation without major implication for hosts
+description | 0.07 | The description of a listing influences how customers perceive the overall quality of a listing; hence the more elaborate the description is the higher the overall score rating gets
+maximum_nights | 0.05 | It is inconvenient for customers to relocate from a listing when the max nights available don’t match their total stay duration and thus higher max nights lead to more satisfied customers
+neighborhood_overview | 0.05 | Neighbourhood has a huge influence on customers overall experience whilst renting a property, and thus impacts the overall score ratings
+host_about | 0.05 | About host feature gives a better credibility to hosts and make their profiles more legitimate, the older the description of the profile is the better the overall score rating
+host_verifications | 0.04 | Customer would feel safer and more relieved if an Airbnb host has a verified identity and thus it would enhance their overall experience and overall score rating
+minimum_nights | 0.04 | Flexible stay duration in terms of minimum nights provide more convenience to short-stay customers and thus has a negative correlation with the overall score rating
